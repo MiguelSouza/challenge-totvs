@@ -1,0 +1,29 @@
+version: '3'
+services:
+  app:
+    container_name: challenge-totvs-front
+    restart: always
+    build: ./challenge-totvs-front
+    ports:
+      - '8081:3000'
+    external_links:
+      - app
+  api:
+    container_name: challenge-totvs-api
+    restart: always
+    environment:
+        - HOST=mongo
+    build: ./challenge-totvs-api
+    ports:
+      - '8080:3001'
+    external_links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - '27017:27017'
+  mongo-seed:
+    build: ./mongo-seed
+    links:
+      - mongo    

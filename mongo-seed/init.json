@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Miguel de Souza",
+        "value": 200000,
+        "since": "2016-05-18T16:00:00Z"
+    },
+    {
+        "name": "Eduarda Duarte",
+        "value": 50000,
+        "since": "2019-05-18T16:00:00Z"
+    },
+    {
+        "name": "Jhonatan Silva",
+        "value": 30000,
+        "since": "2017-05-18T16:00:00Z"
+    },
+    {
+        "name": "Vanessa Alves",
+        "value": 250000,
+        "since": "2011-05-18T16:00:00Z"
+    },
+    {
+        "name": "Yasmin Ferreiro",
+        "value": 20000,
+        "since": "2013-05-18T16:00:00Z"
+    }
+]
